@@ -1,1 +1,3 @@
-## Hello World
+---
+permalink: /index.html
+---
