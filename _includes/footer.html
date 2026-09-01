@@ -17,9 +17,9 @@
     </section>
     <section>
       <h2>Follow us</h2>
-      <ul>
+      <ul class="social-links">
         {% for item in site.data.social %}
-        <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+        <li><a href="{{ item.url }}"><i class="fa-brands {{ item.icon }}" aria-hidden="true"></i> {{ item.name }}</a></li>
         {% endfor %}
       </ul>
     </section>

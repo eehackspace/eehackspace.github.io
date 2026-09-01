@@ -408,6 +408,8 @@ ul.tidy li { margin-bottom: 0.4rem; }
   padding: 0;
 }
 .site-footer li { margin-bottom: 0.35rem; }
+.site-footer .fa-brands { width: 1em; margin-right: 0.1em; text-align: center; }
+.site-footer .social-links a { text-decoration: none; }
 
 .site-footer .legal {
   max-width: 66rem;

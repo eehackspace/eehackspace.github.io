@@ -1,6 +1,6 @@
 - name: Discord
   url: https://discord.gg/KftFA5S
-  icon: fa-comments
+  icon: fa-discord
 - name: Facebook
   url: https://www.facebook.com/groups/eastessexhackspace
   icon: fa-facebook
@@ -15,7 +15,7 @@
   icon: fa-instagram
 - name: Bluesky
   url: https://bsky.app/profile/eehackspace.bsky.social
-  icon: fa-share-alt
+  icon: fa-bluesky
 - name: Mastodon
   url: https://chaos.social/@eehackspace
-  icon: fa-share-alt
+  icon: fa-mastodon
