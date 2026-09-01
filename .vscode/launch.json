@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "firefox",
+            "request": "launch",
+            "name": "Jekyll: Serve in Docker + Open Firefox",
+            "url": "http://localhost:4000",
+            "webRoot": "${workspaceFolder}/_site",
+            "preLaunchTask": "jekyll: serve (docker)",
+            "postDebugTask": "jekyll: stop (docker)"
+        },
+        {
+            "type": "msedge",
+            "request": "launch",
+            "name": "Jekyll: Serve in Docker + Open Edge",
+            "url": "http://localhost:4000",
+            "webRoot": "${workspaceFolder}/_site",
+            "preLaunchTask": "jekyll: serve (docker)",
+            "postDebugTask": "jekyll: stop (docker)"
+        },
+        {
+            "type": "msedge",
+            "request": "launch",
+            "name": "Jekyll: Serve in Docker + Open Chrome",
+            "url": "http://localhost:4000",
+            "webRoot": "${workspaceFolder}/_site",
+            "preLaunchTask": "jekyll: serve (docker)",
+            "postDebugTask": "jekyll: stop (docker)"
+        }
+    ]
+}

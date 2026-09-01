@@ -1,0 +1,66 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "jekyll: cleanup (docker)",
+            "type": "shell",
+            "command": "docker",
+            "args": ["rm", "-f", "eeh-jekyll-dev"],
+            "presentation": {
+                "reveal": "silent",
+                "panel": "dedicated"
+            },
+            "problemMatcher": [],
+            "ignoreExitCode": true
+        },
+        {
+            "label": "jekyll: serve (docker)",
+            "type": "shell",
+            "command": "docker",
+            "args": [
+                "run", "--rm", "--name", "eeh-jekyll-dev",
+                "-v", "${workspaceFolder}:/srv/jekyll",
+                "-v", "eeh-jekyll-bundle:/usr/local/bundle",
+                "-p", "4000:4000",
+                "-p", "35729:35729",
+                "jekyll/jekyll:latest",
+                "sh", "-c",
+                "bundle install && bundle exec jekyll serve --host 0.0.0.0 --livereload --livereload-port 35729 --force_polling"
+            ],
+            "dependsOn": ["jekyll: cleanup (docker)"],
+            "dependsOrder": "sequence",
+            "isBackground": true,
+            "problemMatcher": {
+                "owner": "jekyll",
+                "pattern": {
+                    "regexp": "^Nothing to see here\\.$",
+                    "file": 1,
+                    "location": 2,
+                    "message": 3
+                },
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": "Configuration file:",
+                    "endsPattern": "Server running\\.\\.\\."
+                }
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "clear": true
+            }
+        },
+        {
+            "label": "jekyll: stop (docker)",
+            "type": "shell",
+            "command": "docker",
+            "args": ["rm", "-f", "eeh-jekyll-dev"],
+            "presentation": {
+                "reveal": "silent",
+                "panel": "dedicated"
+            },
+            "problemMatcher": [],
+            "ignoreExitCode": true
+        }
+    ]
+}
