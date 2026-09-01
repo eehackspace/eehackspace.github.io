@@ -5,7 +5,7 @@
 		margin: (_size(element-margin) * 1.25) 0;
 
 		@include flexgrid((
-			columns:			3,
+			columns:			4,
 			gutters:			3rem,
 			vertical-align:		stretch
 		));
@@ -13,11 +13,16 @@
 		.content {
 			border-radius: _size(border-radius);
 			height: 100%;
-			padding: 3rem;
+			padding: 2rem;
 			text-align: center;
 
 			.icon {
 				font-size: 5rem;
+				color: _palette(accent1, bg);
+			}
+
+			p {
+				margin-bottom: 0;
 			}
 		}
 
@@ -33,7 +38,7 @@
 			@include flexgrid-resize((
 				columns:		2,
 				gutters:		2rem,
-				prev-columns:	3
+				prev-columns:	4
 			));
 
 			.content {
@@ -45,7 +50,7 @@
 			@include flexgrid-resize((
 				columns:		1,
 				gutters:		2rem,
-				prev-columns:	(3, 2)
+				prev-columns:	(4, 2)
 			));
 
 		}

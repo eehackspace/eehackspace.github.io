@@ -39,6 +39,8 @@
 		z-index: _misc(z-index-base) + 1;
 
 		> .logo {
+			@include vendor('align-items', 'center');
+			@include vendor('display', 'flex');
 			color: _palette($accent, fg-bold);
 			font-size: 1rem;
 			font-weight: _font(weight-bold);
@@ -46,6 +48,12 @@
 			line-height: inherit;
 			padding: 0 1.25rem;
 			text-decoration: none;
+
+			img {
+				height: 2rem;
+				width: auto;
+				margin-right: 0.6rem;
+			}
 		}
 
 		> nav {
@@ -103,6 +111,10 @@
 		#header {
 			height: 44px;
 			line-height: 44px;
+
+			> .logo img {
+				height: 1.65rem;
+			}
 		}
 	}
 

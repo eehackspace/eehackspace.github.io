@@ -1,24 +1,24 @@
 - title: Woodshop
-  image: /images/saw.png
-  alt: Woodworking
-  description: "The woodworkshop is equiped with a table saw, lathe, 8ft x 4ft CNC, bandsaw and various hand tools.  Not only can you use our facilities we have plenty of keen woodworkers to share skills with"
+  icon: fa-tree
+  description: "The wood workshop is equiped with a table saw, lathe, CNC, bandsaw and various hand tools."
 - title: Laser
-  image: /images/laser.png
-  alt: Laser Cutting
-  description: "As part of the COVID-19 outbreak, we crowdfunded £10k to buy an 80w laser and provide PPE to the NHS.  Whilst the PPE shortage is over, the laser remains for use!"
+  icon: fa-crosshairs
+  description: "We have a 900mm × 600mm 80W CO₂ laser cutter and a MOPA fibre laser for precision engraving and marking."
 - title: Textiles
-  image: /images/textiles.png
-  alt: Textiles
-  description: "Learn to sew, leatherwork, pour resins or weave electronics into your clothing."
-- title: "Brewing, Photography & Wet Lab"
-  image: /images/brewing.png
-  alt: "Brewing, Photography & Wet Lab"
-  description: "The wet lab is the former showers - it has an extraction system perfect for the removal of steam, no outside lights and a tiled surface with drainage perfect for spills."
+  icon: fa-scissors
+  description: "Learn to sew, work with leather, weave electronics into clothing, and explore all kinds of textile crafts."
+- title: "3D Printing"
+  icon: fa-cubes
+  description: "We have four modern FDM 3D printers, three with multi-material capabilities: 2× Bambu X1C, 1× Prusa XL and 1× FLSUN V400."
 - title: Computer Lab
-  image: /images/Computer.png
-  alt: Computer
-  description: "The computer lab has 3D printing facilities as well as some setup PCs and an electronics workbench."
-- title: Metal Workshop
-  image: /images/welding.png
-  alt: Welding
-  description: "Our metal workshop has grown to include larger machine tools you're unlikely to find in a typical hobbyist shed, alongside welding and grinding facilities."
+  icon: fa-desktop
+  description: "Our computer lab has PCs for general use, CAD, 3D modelling and working with our 3D printers."
+- title: Electronics
+  icon: fa-microchip
+  description: "A fully equipped electronics workbench with everything you need to build, test and repair projects."
+- title: Metalshop
+  icon: fa-cogs
+  description: "Our metal workshop includes large machine tools including a lathe and milling machine that you're unlikely to find in a typical hobbyist workshop."
+- title: "Social Space"
+  icon: fa-users 
+  description: "A comfortable space to socialise, share ideas, give talks and run workshops and events."

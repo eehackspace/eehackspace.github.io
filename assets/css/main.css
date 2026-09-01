@@ -683,28 +683,31 @@ table.alt tbody tr td {
     -ms-flex-grow: 0;
     flex-grow: 0; }
   .highlights > * {
-    width: 33.3333333333%; }
+    width: 25%; }
   .highlights > * {
     padding: 1.5rem;
-    width: calc(33.3333333333% + 1rem); }
-  .highlights > :nth-child(-n + 3) {
+    width: calc(25% + 0.75rem); }
+  .highlights > :nth-child(-n + 4) {
     padding-top: 0; }
-  .highlights > :nth-last-child(-n + 3) {
+  .highlights > :nth-last-child(-n + 4) {
     padding-bottom: 0; }
-  .highlights > :nth-child(3n + 1) {
+  .highlights > :nth-child(4n + 1) {
     padding-left: 0; }
-  .highlights > :nth-child(3n) {
+  .highlights > :nth-child(4n) {
     padding-right: 0; }
-  .highlights > :nth-child(3n + 1),
-  .highlights > :nth-child(3n) {
-    width: calc(33.3333333333% + -0.5rem); }
+  .highlights > :nth-child(4n + 1),
+  .highlights > :nth-child(4n) {
+    width: calc(25% + -0.75rem); }
   .highlights .content {
     border-radius: 4px;
     height: 100%;
-    padding: 3rem;
+    padding: 2rem;
     text-align: center; }
     .highlights .content .icon {
-      font-size: 5rem; }
+      font-size: 5rem;
+      color: #ce1b28; }
+    .highlights .content p {
+      margin-bottom: 0; }
   .highlights > div > :last-child {
     margin-bottom: 0; }
   @media screen and (max-width: 980px) {
@@ -712,17 +715,17 @@ table.alt tbody tr td {
       width: 50%; }
     .highlights > * {
       padding: 1rem;
-      width: calc(33.3333333333% + 0.6666666667rem); }
-    .highlights > :nth-child(-n + 3) {
+      width: calc(25% + 0.5rem); }
+    .highlights > :nth-child(-n + 4) {
       padding-top: 1rem; }
-    .highlights > :nth-last-child(-n + 3) {
+    .highlights > :nth-last-child(-n + 4) {
       padding-bottom: 1rem; }
-    .highlights > :nth-child(3n + 1) {
+    .highlights > :nth-child(4n + 1) {
       padding-left: 1rem; }
-    .highlights > :nth-child(3n) {
+    .highlights > :nth-child(4n) {
       padding-right: 1rem; }
-    .highlights > :nth-child(3n + 1),
-    .highlights > :nth-child(3n) {
+    .highlights > :nth-child(4n + 1),
+    .highlights > :nth-child(4n) {
       padding: 1rem;
       width: calc(50% + 1rem); }
     .highlights > * {
@@ -746,17 +749,17 @@ table.alt tbody tr td {
       width: 100%; }
     .highlights > * {
       padding: 1rem;
-      width: calc(33.3333333333% + 0.6666666667rem); }
-    .highlights > :nth-child(-n + 3) {
+      width: calc(25% + 0.5rem); }
+    .highlights > :nth-child(-n + 4) {
       padding-top: 1rem; }
-    .highlights > :nth-last-child(-n + 3) {
+    .highlights > :nth-last-child(-n + 4) {
       padding-bottom: 1rem; }
-    .highlights > :nth-child(3n + 1) {
+    .highlights > :nth-child(4n + 1) {
       padding-left: 1rem; }
-    .highlights > :nth-child(3n) {
+    .highlights > :nth-child(4n) {
       padding-right: 1rem; }
-    .highlights > :nth-child(3n + 1),
-    .highlights > :nth-child(3n) {
+    .highlights > :nth-child(4n + 1),
+    .highlights > :nth-child(4n) {
       padding: 1rem;
       width: calc(100% + 2rem); }
     .highlights > * {
@@ -1811,14 +1814,14 @@ ul.icons {
   -webkit-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  background-image: url("../../images/IMG_20200918_075842.jpg");
+  background-image: url("../../images/hackspace-outside.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-top: 0;
   display: -ms-flexbox;
-  height: 35rem !important;
-  min-height: 35rem;
+  height: 25rem !important;
+  min-height: 25rem;
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -2060,11 +2063,6 @@ ul.icons {
 #cta {
   background-color: #ce1b28;
   color: rgba(255, 255, 255, 0.75);
-  background-attachment: fixed;
-  background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(../../images/cta01.jpg);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
   text-align: center;
   z-index: 1; }
@@ -2429,6 +2427,14 @@ body {
   width: 100%;
   z-index: 10001; }
   #header > .logo {
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
     color: #ffffff;
     font-size: 1rem;
     font-weight: 600;
@@ -2436,6 +2442,10 @@ body {
     line-height: inherit;
     padding: 0 1.25rem;
     text-decoration: none; }
+    #header > .logo img {
+      height: 2rem;
+      width: auto;
+      margin-right: 0.6rem; }
   #header > nav > a {
     color: inherit;
     display: inline-block;
@@ -2477,7 +2487,9 @@ body {
 
   #header {
     height: 44px;
-    line-height: 44px; } }
+    line-height: 44px; }
+    #header > .logo img {
+      height: 1.65rem; } }
 @media screen and (max-width: 480px) {
   #header {
     min-width: 320px; } }
@@ -2499,7 +2511,7 @@ body {
   -webkit-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  background-image: linear-gradient(rgba(17, 17, 17, 0.25), rgba(17, 17, 17, 0.25)), url("../../images/IMG_20200918_075842.jpg");
+  background-image: linear-gradient(rgba(17, 17, 17, 0.25), rgba(17, 17, 17, 0.25)), url("../../images/hackspace-outside.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
