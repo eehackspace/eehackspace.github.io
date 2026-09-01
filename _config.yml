@@ -1,0 +1,12 @@
+title: East Essex Hackspace
+description: A Community Workshop Space for Hobbies and Skill Sharing
+url: "https://eehack.space"
+
+markdown: kramdown
+permalink: pretty
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

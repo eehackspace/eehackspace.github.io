@@ -1,0 +1,24 @@
+- title: Woodshop
+  image: /images/saw.png
+  alt: Woodworking
+  description: "The woodworkshop is equiped with a table saw, lathe, 8ft x 4ft CNC, bandsaw and various hand tools.  Not only can you use our facilities we have plenty of keen woodworkers to share skills with"
+- title: Laser
+  image: /images/laser.png
+  alt: Laser Cutting
+  description: "As part of the COVID-19 outbreak, we crowdfunded £10k to buy an 80w laser and provide PPE to the NHS.  Whilst the PPE shortage is over, the laser remains for use!"
+- title: Textiles
+  image: /images/textiles.png
+  alt: Textiles
+  description: "Learn to sew, leatherwork, pour resins or weave electronics into your clothing."
+- title: "Brewing, Photography & Wet Lab"
+  image: /images/brewing.png
+  alt: "Brewing, Photography & Wet Lab"
+  description: "The wet lab is the former showers - it has an extraction system perfect for the removal of steam, no outside lights and a tiled surface with drainage perfect for spills."
+- title: Computer Lab
+  image: /images/Computer.png
+  alt: Computer
+  description: "The computer lab has 3D printing facilities as well as some setup PCs and an electronics workbench."
+- title: Metal Workshop
+  image: /images/welding.png
+  alt: Welding
+  description: "Our metal workshop has grown to include larger machine tools you're unlikely to find in a typical hobbyist shed, alongside welding and grinding facilities."
