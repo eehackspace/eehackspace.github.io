@@ -2,54 +2,85 @@
 layout: default
 title: Find Us
 ---
-<!-- Heading -->
-<div id="heading">
-<h1>Find Us</h1>
-</div>
 
-<!-- Main -->
-<section id="main" class="wrapper">
-<div class="inner">
-<div class="content" markdown="1">
+{% include page-title.html title="Find us" %}
 
-## Parking
-
-There is plenty of parking at the space for cars, the car park is free, but can be locked outside of park sociable hours of 9am to 4:30pm.  We have keys for the gate should you get locked in.  You are encouraged if you intend to leave later than 10pm to park outside the gates, they are very, very squeeky.  Please respect our neighbours!
-
-## Cycling
-
-We have no shower facilities, but we do have a cycle rack.  There are very few cycle paths in our part of Essex, but several back roads and a bridle way from Hockley Station.  Greater Anglia runs regular services (20 minutes off peak, 10 minutes on peak, 30 minutes at weekends.
-
-## Train
-
-The nearest train station is Hockley and is served by Greater Anglia (sometimes even regularly).  The station is within walking distance but there is a hill between the space and the station.
-
-Last train times:<br />
-HOC to LST Mon-Sat: 23:12, Sun:23:**06**<br />
-HOC to SVIC Mon-Sat: 01:41, Sun: 01:**40**
-
-## Taxi
-
-Two Taxi Firms serve Hockley regularly - Alpine (01702) 531531 which are based on the london bound station side and Andrews (01702) 200200.
+{% capture address_content %}
+<div class="cols cols-photo">
+  <div markdown="1">
 
 ## Address
 
-Essex Hackspace<br />
-Hawkwell Pavilion<br />
-Park Gardens<br />
-Hockley<br />
-SS5 4HF
+<address class="address">
+  East Essex Hackspace CIO<br>
+  Hawkwell Pavilion<br>
+  Park Gardens<br>
+  Hockley, Essex<br>
+  SS5 4HF
+</address>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d619.602066459533!2d0.6721776687247373!3d51.59740759450991!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1590844659295!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+- what3words: [tripods.normal.outlined](https://what3words.com/tripods.normal.outlined)
+- [Directions on Google Maps](https://www.google.com/maps/dir/?api=1&destination=51.596974,0.672686) (51.596974, 0.672686)
+- Email: [info@eehack.space](mailto:info@eehack.space)
+{: .tidy}
 
----
+We're the white former sports pavilion at Clements Hall recreation ground in Hawkwell. Look for the round red logo by the front door. The best time for a first visit is a Tuesday evening - socials from 7:30pm, tours from around 8pm.
 
-- **Email** info@eehack.space
-- **What3Words** [https://what3words.com/tripods.normal.outlined](https://what3words.com/tripods.normal.outlined)
-- **Facebook** [https://www.facebook.com/groups/eastessexhackspace](https://www.facebook.com/groups/eastessexhackspace)
-- **Github** [https://github.com/eehackspace](https://github.com/eehackspace)
-- **Instagram** [https://www.instagram.com/eehspace/](https://www.instagram.com/eehspace/)
-
+  </div>
+  <figure>
+    <img src="/images/hackspace-ramp.jpg" alt="The white pavilion building from the path, with the East Essex Hackspace logo by the front door and a ramp to the entrance">
+    <figcaption>The pavilion from the footpath, with the ramp to the front door.</figcaption>
+  </figure>
 </div>
+{% endcapture %}
+{% include section.html content=address_content %}
+
+{% capture getting_here_content %}
+## Getting here
+
+### Parking
+
+There is plenty of free parking at the space. The car park can be locked outside park hours of 9am to 4:30pm - we have keys for the gate should you get locked in. If you plan to leave later than 10pm, please park outside the gates: they are very, very squeaky, and we like our neighbours.
+
+### Train
+
+The nearest station is Hockley, served by Greater Anglia (roughly every 20 minutes off peak, 10 minutes at peak and 30 minutes at weekends). The space is within walking distance, though there's a hill between the station and us.
+
+<!-- VERIFY: last train times below are from the current site and may be out of date — check against the latest Greater Anglia timetable. -->
+Last trains from Hockley: to London Liverpool Street, Mon–Sat 23:12, Sun 23:06; to Southend Victoria, Mon–Sat 01:41, Sun 01:40.
+
+### Cycling
+
+We have a cycle rack (but no showers). There are few cycle paths in this part of Essex, but several quiet back roads and a bridleway from Hockley station.
+
+### Taxi
+
+Two taxi firms serve Hockley regularly: Alpine (01702 531531), based on the London-bound side of the station, and Andrews (01702 200200).
+{% endcapture %}
+{% include section.html wash=true content=getting_here_content %}
+
+{% capture accessibility_content %}
+## Accessibility
+
+<div class="cols cols-photo">
+  <div markdown="1">
+
+There is step-free access to the building via a ramp. Because of the age of the building, the internal corridors are about 75&thinsp;cm wide, which may be restrictive for larger powered wheelchairs.
+
+A second, much wider entrance at the back of the building leads straight into the social space and has access to the accessible toilet. There's a small lip of about 3–4&thinsp;cm on that entrance.
+
+A hearing loop is installed in the social space (a compatible microphone is not currently available), and we also have a mobile hearing loop that can be moved around the site.
+
+If you have any questions about access, email [info@eehack.space](mailto:info@eehack.space) and we'll do our best to help.
+
+  </div>
+  <figure>
+    <img src="/images/step-free-ramp.jpg" alt="The concrete ramp with metal handrails leading to the pavilion entrance">
+    <figcaption>Step-free access to the front entrance.</figcaption>
+  </figure>
 </div>
-</section>
+
+The wiki has more detail, including a [site plan](https://wiki.eehack.space/index.php/Site_Plan) and [directions](https://wiki.eehack.space/index.php/Directions).
+{: .wiki-note}
+{% endcapture %}
+{% include section.html content=accessibility_content %}

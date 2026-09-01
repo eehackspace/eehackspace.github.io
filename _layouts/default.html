@@ -1,32 +1,72 @@
-<!DOCTYPE HTML>
-<!--
-	Industrious by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
-<html lang="en">
-	<head>
-		<title>{{ page.title }} | {{ site.title }}</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="{{ page.description | default: site.description }}" />
-		<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en-GB">
 
-		{% include header.html %}
-		{% include nav.html %}
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{ page.title }} | {{ site.title }}</title>
+	<meta name="description"
+		content="East Essex Hackspace is a volunteer-run community workshop and registered charity in Hawkwell, Essex. Use tools you don't have at home, learn new skills and meet people who make things. Visit on a Tuesday evening.">
+	<meta property="og:title" content="East Essex Hackspace">
+	<meta property="og:description"
+		content="A community workshop in Hawkwell, Essex, where you can use tools you don't have at home, learn new skills and meet people who make things.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://eehack.space/">
+	<meta property="og:image" content="https://eehack.space/images/hackspace-outside.jpg">
+	<link rel="icon" href="/favicon.ico">
+	<link rel="stylesheet" href="/assets/css/main.css">
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NGO",
+  "name": "East Essex Hackspace CIO",
+  "alternateName": "East Essex Hackspace",
+  "url": "https://eehack.space/",
+  "logo": "https://eehack.space/images/eeh-logo.png",
+  "email": "info@eehack.space",
+  "nonprofitStatus": "https://schema.org/CharitableIncorporatedOrganization",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Hawkwell Pavilion, Park Gardens",
+    "addressLocality": "Hockley",
+    "addressRegion": "Essex",
+    "postalCode": "SS5 4HF",
+    "addressCountry": "GB"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 51.596974,
+    "longitude": 0.672686
+  },
+  "sameAs": [
+    "https://wiki.eehack.space/",
+    "https://www.facebook.com/groups/eastessexhackspace",
+    "https://www.instagram.com/eehspace/",
+    "https://bsky.app/profile/eehackspace.bsky.social",
+    "https://chaos.social/@eehackspace",
+    "https://www.tiktok.com/@east.essex.hacksp",
+    "https://github.com/eehackspace"
+  ]
+}
+</script>
+</head>
+
+<body>
+	<a class="skip-link" href="#main">Skip to content</a>
+
+	{% include header.html %}
+
+
+	<main id="main">
 
 		{{ content }}
 
-		{% include footer.html %}
+	</main>
 
-		<!-- Scripts -->
-			<script src="{{ '/assets/js/jquery.min.js' | relative_url }}"></script>
-			<script src="{{ '/assets/js/browser.min.js' | relative_url }}"></script>
-			<script src="{{ '/assets/js/breakpoints.min.js' | relative_url }}"></script>
-			<script src="{{ '/assets/js/util.js' | relative_url }}"></script>
-			<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 
-	</body>
+	{% include footer.html %}
+
+	<script src="/assets/js/nav.js"></script>
+</body>
+
 </html>

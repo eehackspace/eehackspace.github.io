@@ -1,0 +1,5 @@
+<section class="section{% if include.wash %} wash{% endif %}"{% if include.id %} id="{{ include.id }}"{% endif %}>
+  <div class="inner">
+    {{ include.content | markdownify }}
+  </div>
+</section>

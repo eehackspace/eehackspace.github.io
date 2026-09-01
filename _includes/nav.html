@@ -1,7 +1,7 @@
-		<nav id="menu">
-			<ul class="links">
-				{% for item in site.data.nav %}
-				<li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
-				{% endfor %}
-			</ul>
-		</nav>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <ul>
+		{% for item in site.data.nav %}
+        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+		{% endfor %}
+      </ul>
+    </nav>

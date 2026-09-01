@@ -4,6 +4,9 @@
 - name: Facebook
   url: https://www.facebook.com/groups/eastessexhackspace
   icon: fa-facebook
+- name: TikTok
+  url: https://www.tiktok.com/@east.essex.hacksp
+  icon: fa-tiktok
 - name: Github
   url: https://github.com/eehackspace
   icon: fa-github

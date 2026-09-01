@@ -2,41 +2,39 @@
 layout: default
 title: Join Us
 ---
-<!-- Heading -->
-<div id="heading">
-<h1>Join Us</h1>
-</div>
 
-<!-- Main -->
-<section id="main" class="wrapper">
-<div class="inner">
-<div class="content" markdown="1">
+{% include page-title.html title="Join us" %}
 
-## Membership and Subscriptions
+{% capture membership_content %}
+## Membership
 
-Lifetime membership is just a one-off £5 and enables voting rights.
+Lifetime membership is a one-off **£5**. Membership gives you voting rights in how the charity is run.
 
-After paying the £5 membership fee, you can access the space with a £5 monthly subscription. We also suggest a £15 donation, which is eligible for Gift Aid, although you are welcome to donate more or less if you prefer. Your subscription can be cancelled or restarted at any time without needing to repay the original £5 membership fee.
+After you've joined and been inducted, you can access the space with a £5 monthly subscription. We also suggest a £15 donation, which is eligible for Gift Aid, although you are welcome to donate more or less if you prefer. Your subscription can be cancelled or restarted at any time without needing to repay the original £5 membership fee.
 
-Subscriptions provide access to the workshops and all funds go to paying bills, buying consumables and the maintenance and purchase of equipment.
+If you're a UK taxpayer, your donations are eligible for **Gift Aid**, which adds 25% at no cost to you. Your donations pay the bills: rent, heating (the computer lab costs about 90p an hour to heat from cold!), insurance, consumables and new equipment.
 
-## How to Join & Subscribe
+Membership is 18+ only. Families are welcome on site as long as children are supervised.
+{% endcapture %}
+{% include section.html content=membership_content %}
 
-If you're not sure, visit us on a Tuesday evening from around 8pm to get a workshop tour/induction & meet some of the members!
+{% capture how_to_join_content %}
+{% include how-to-join.html %}
+{% endcapture %}
+{% include section.html wash=true content=how_to_join_content %}
 
-1. Get an induction - generally held on Tuesdays at 8pm. It's worth checking on [Discord](https://discord.gg/KftFA5S) before travelling any distance in case they've been cancelled at short notice.
-2. Join at [checkout.eehack.space](http://checkout.eehack.space) and pay your £5 lifetime membership, then once you've completed your induction, subscribe at [checkout.eehack.space](http://checkout.eehack.space). A trustee has to enable your account. You can then setup a payment.
+{% capture what_you_get_content %}
+## What you get
 
-We currently run a split flexible payment scheme. The membership subscription is £5pcm, but we ask for / recommend a £15pcm top up to pay for the facilities. You can also giftaid on this £15pcm which gives the space an additional £3.75 a month. If you make more use of the space, you can pay more, or less.
+- 24/7 access to the space - with some restrictions on noisy tools late in the day, out of respect for our neighbours
+- Use of the wood workshop, metal workshop, laser cutting room, 3D printers, computer lab, electronics workbench, textiles equipment and social space
+- Free internet access while you're on site
+- Free or discounted software for space machines, including LightBurn, VCarve Pro, AutoCAD and SolidWorks
+- A say in how the space is run and what tools we buy next
+- A community of makers happy to share what they know
+{: .tidy}
 
-Your additional payments help us afford to heat the space, provide new equipment or pay rent. For example, the computer lab costs 90p per hour to heat from cold!
-
-There is a page for your taxible donations on your profile for end of year accounting.
-
-## What You Get
-
-Members get 24/7 access (with some restrictions on noisy tools, out of respect for our neighbours), free internet access, and discounted design & laser cutting software including Lightburn, VCarve Pro, AutoCAD and SolidWorks.
-
-</div>
-</div>
-</section>
+The [wiki](https://wiki.eehack.space/) has the full detail on membership, inductions, rules and the [code of conduct](https://wiki.eehack.space/index.php/Code_of_Conduct).
+{: .wiki-note}
+{% endcapture %}
+{% include section.html content=what_you_get_content %}

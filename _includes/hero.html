@@ -1,0 +1,13 @@
+<section class="hero">
+  <img class="photo" src="{{ include.photo }}" alt="" aria-hidden="true">
+  <div class="inner">
+    {% if include.logo %}<img class="logo-big" src="{{ include.logo }}" alt="" width="96" height="96">{% endif %}
+    <h1>{{ include.title }}</h1>
+    <p class="lead">{{ include.lead }}</p>
+    <p>
+      {% if include.cta_solid_href %}<a class="btn btn-solid" href="{{ include.cta_solid_href }}">{{ include.cta_solid_text }}</a>{% endif %}
+      {% if include.cta_outline_href %}<a class="btn btn-outline" href="{{ include.cta_outline_href }}">{{ include.cta_outline_text }}</a>{% endif %}
+    </p>
+    {% if include.where %}<p class="where">{{ include.where }}</p>{% endif %}
+  </div>
+</section>

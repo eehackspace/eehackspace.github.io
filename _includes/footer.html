@@ -1,31 +1,31 @@
-		<footer id="footer">
-			<div class="inner">
-				<div class="content">
-					<section>
-						<h3>East Essex Hackspace</h3>
-						<p>A community workshop space for hobbies and skill sharing, based in Hawkwell, Essex. <a href="{{ '/about/' | relative_url }}">Read our story, accessibility info and charitable status &raquo;</a></p>
-					</section>
-					<section>
-						<h4>Useful Pages</h4>
-						<ul class="alt">
-							{% for item in site.data.footer_links %}
-							{% unless item.url == page.url %}
-							<li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
-							{% endunless %}
-							{% endfor %}
-						</ul>
-					</section>
-					<section>
-						<h4>Follow Us</h4>
-						<ul class="plain">
-							{% for item in site.data.social %}
-							<li><a href="{{ item.url }}"><i class="icon {{ item.icon }}">&nbsp;</i>{{ item.name }}</a></li>
-							{% endfor %}
-						</ul>
-					</section>
-				</div>
-				<div class="copyright">
-					&copy; {{ site.time | date: "%Y" }} East Essex Hackspace
-				</div>
-			</div>
-		</footer>
+<footer class="site-footer">
+  <div class="inner">
+    <section>
+      <h2>East Essex Hackspace</h2>
+      <p>A volunteer-run community workshop for hobbies and skill sharing, based in Hawkwell, Essex.</p>
+      <p>Email <a href="mailto:info@eehack.space">info@eehack.space</a></p>
+    </section>
+    <section>
+      <h2>Pages</h2>
+      <ul>
+		{% for item in site.data.footer_links %}
+		{% unless item.url == page.url %}
+        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+		{% endunless %}
+		{% endfor %}
+      </ul>
+    </section>
+    <section>
+      <h2>Follow us</h2>
+      <ul>
+        {% for item in site.data.social %}
+        <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </section>
+  </div>
+  <div class="legal">
+    <p>East Essex Hackspace is a registered charity (<a href="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5163217/charity-overview">1190927</a>) and a charitable incorporated organisation registered in England &amp; Wales (<a href="https://find-and-update.company-information.service.gov.uk/company/CE023644">CE023644</a>). Registered office: Park Gardens, Hockley, Essex SS5 4HF.</p>
+    <p>© 2026 East Essex Hackspace</p>
+  </div>
+</footer>
